@@ -8,7 +8,9 @@ import DisplaySearch from './DisplaySearch';
 const Search = () => {
   const [text, setText] = useState('');
   const [results, setResults] = useState(null);
-  const [query] = useDebounce(text, 200);
+
+  // delay for a few seconds as user types query
+  const [query] = useDebounce(text, 500);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
