@@ -7,6 +7,7 @@ import { toast } from 'react-toastify';
 import Button from '../../components/Button';
 
 const MovieDetail = () => {
+  // movie id gotten from route/url
   const { id } = useParams();
 
   const [movie, setMovie] = useState(null);
@@ -15,6 +16,7 @@ const MovieDetail = () => {
     fetchMovie();
   }, []);
 
+// make api request to the imbd api and update movie state
   const fetchMovie = async () => {
     const movieDetailUrl = `${API_URL}movie/${id}`;
 
@@ -31,6 +33,7 @@ const MovieDetail = () => {
     }
   };
 
+  // ensure app doesn't crash when api call hasn't returned data
   if (!movie) return null;
 
   const date = new Date(movie.release_date);
