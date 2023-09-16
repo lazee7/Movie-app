@@ -38,7 +38,7 @@ const Card = (props) => {
   const date = new Date(release_date);
   const releaseDate = date.toUTCString();
   return (
-    <article data-testid='movie-card' className='relative'>
+    <div data-testid='movie-card' className='relative'>
       <Button
         className={`absolute z-50 top-0 right-0 ${
           toggleLike ? 'text-pink' : 'text-white'
@@ -67,7 +67,7 @@ const Card = (props) => {
           <p className='capitalize'>{genres}</p>
         </div>
       </Link>
-    </article>
+    </div>
   );
 };
 
