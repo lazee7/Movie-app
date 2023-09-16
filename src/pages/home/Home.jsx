@@ -21,6 +21,7 @@ const Home = () => {
         headers: OPTIONS,
       });
 
+      // data
       const d = await res.json();
       setData(d.results);
     } catch (err) {
@@ -44,7 +45,7 @@ const Home = () => {
             See more <AiOutlineRight />
           </Link>
         </div>
-        <MovieList movies={tenMovies} />
+        <MovieList movies={tenMovies} link={'movies/'} />
       </main>
       <Footer />
     </>

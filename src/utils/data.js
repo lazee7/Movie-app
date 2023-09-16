@@ -7,4 +7,4 @@ export const OPTIONS = {
   'Content-Type': 'application/json',
 };
 
-export const POPULAR_MOVIES_ENDPOINT = `${API_URL}movie/top_rated?language=en-US&page=1`;
+export const POPULAR_MOVIES_ENDPOINT = `${API_URL}movie/top_rated?language=en-US`;

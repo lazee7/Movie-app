@@ -12,7 +12,7 @@ function App() {
     <>
       <ToastContainer />
       <Routes>
-        <Route index path='/' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route element={<DashBoardLayout />}>
           <Route path='movies' element={<Movies />} />
           <Route path='movies/:id' element={<MovieDetail />} />

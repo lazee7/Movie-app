@@ -58,7 +58,7 @@ const SideBar = () => {
   return (
     <>
       <div
-        className={`md:flex flex-col justify-between items-center border border-light-black rounded-e-sb w-56 py-9 ${
+        className={`md:flex flex-col justify-start items-center border border-light-black rounded-e-sb w-56 py-9 ${
           showSideBar ? 'flex fixed z-30 bg-white h-screen' : 'hidden'
         }`}
       >

@@ -9,6 +9,7 @@ import Genre from './Genre';
 
 const Card = (props) => {
   const {
+    link = '',
     poster_path,
     title,
     release_date,
@@ -46,7 +47,7 @@ const Card = (props) => {
       >
         <FaHeart className='text-5xl' />
       </Button>
-      <Link to={`movies/${id}`} className='z-[1]'>
+      <Link to={`${link}${id}`} className='z-[1]'>
         <div className=''>
           <img
             src={`${IMG_URL}${poster_path}`}
@@ -78,6 +79,7 @@ Card.propTypes = {
   vote_average: PropTypes.number,
   genre_ids: PropTypes.array,
   id: PropTypes.number,
+  link: PropTypes.string,
 };
 
 export default Card;
