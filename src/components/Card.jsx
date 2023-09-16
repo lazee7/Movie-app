@@ -36,7 +36,7 @@ const Card = (props) => {
   const [toggleLike, setToggleLike] = useState(false);
   const genres = stringGenres(genre_ids);
   const date = new Date(release_date);
-  const releaseDate = date.getFullYear();
+  const releaseDate = date.toUTCString();
   return (
     <article data-testid='movie-card' className='relative'>
       <Button
