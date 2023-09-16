@@ -6,5 +6,5 @@ Task:Create a movie discovery web application that allows users to search for mo
 
 - git clone repository
 - cd to cloned repository
-- `npm install` to install all projext dependencies
+- `npm install` to install all project dependencies
 - `npm run dev` to start local server
