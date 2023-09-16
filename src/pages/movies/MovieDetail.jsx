@@ -58,7 +58,7 @@ const MovieDetail = () => {
             <span className='text-3xl rounded-full w-1 h-1 bg-text '></span>
             <p data-testid='movie-realease-date'>{releaseDate}</p>
             <span className='text-3xl rounded-full w-1 h-1 bg-text '></span>
-            <p data-testid='movie-runtime'>{movie.runtime}m</p>
+            <p data-testid='movie-runtime'>{movie.runtime}</p>
           </div>
           <ul className='flex gap-2 items-center'>
             {movie.genres.map(({ id, name }) => (
