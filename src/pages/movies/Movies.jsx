@@ -14,6 +14,7 @@ const Movies = () => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   }, [page]);
 
+  // handle movie api requests
   const fetchMovies = async () => {
     try {
       const url = `${POPULAR_MOVIES_ENDPOINT}&page=${page}`;
@@ -31,6 +32,7 @@ const Movies = () => {
     }
   };
 
+  // change page so useEffect is triggered for next page from api
   const nextPage = () => {
     setPage((prev) => prev + 1);
   };
